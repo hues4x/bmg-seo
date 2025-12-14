@@ -230,46 +230,6 @@ a {
     .cta-hint {
         color: #FFFFFF !important;
     }
-    
-    .brand-name {
-        text-shadow: 
-            0 0 12px rgba(0, 0, 0, 0.95),
-            0 2px 20px rgba(0, 0, 0, 0.95),
-            0 4px 30px rgba(0, 0, 0, 0.9),
-            0 0 6px rgba(0, 0, 0, 0.8) !important;
-    }
-    
-    .hero-headline {
-        text-shadow: 
-            0 0 15px rgba(0, 0, 0, 0.98),
-            0 2px 25px rgba(0, 0, 0, 0.98),
-            0 4px 35px rgba(0, 0, 0, 0.95),
-            0 6px 45px rgba(0, 0, 0, 0.9),
-            0 0 8px rgba(0, 0, 0, 0.8) !important;
-    }
-    
-    .hero-subtitle {
-        text-shadow: 
-            0 0 12px rgba(0, 0, 0, 0.95),
-            0 2px 18px rgba(0, 0, 0, 0.9),
-            0 4px 28px rgba(0, 0, 0, 0.85),
-            0 0 6px rgba(0, 0, 0, 0.75) !important;
-    }
-    
-    .hero-badge,
-    .pill {
-        text-shadow: 
-            0 0 10px rgba(0, 0, 0, 0.85),
-            0 2px 15px rgba(0, 0, 0, 0.8),
-            0 0 5px rgba(0, 0, 0, 0.7) !important;
-    }
-    
-    .cta-hint {
-        text-shadow: 
-            0 0 10px rgba(0, 0, 0, 0.9),
-            0 2px 15px rgba(0, 0, 0, 0.8),
-            0 0 5px rgba(0, 0, 0, 0.7) !important;
-    }
 }
 
 @keyframes fadeInUp {
@@ -301,7 +261,6 @@ a {
     width: 56px;
     height: 56px;
     object-fit: contain;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
     animation: logoGlow 2s ease-in-out infinite alternate;
     transition: var(--transition);
 }
@@ -312,10 +271,10 @@ a {
 
 @keyframes logoGlow {
     from { 
-        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
     }
     to { 
-        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));
+        filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));
     }
 }
 
@@ -326,21 +285,11 @@ a {
     color: #FFFFFF;
     margin: 0;
     line-height: 1.2;
-    text-shadow: 
-        0 0 10px rgba(0, 0, 0, 0.9),
-        0 2px 20px rgba(0, 0, 0, 0.9),
-        0 4px 30px rgba(0, 0, 0, 0.8),
-        0 0 5px rgba(0, 0, 0, 0.7);
     letter-spacing: -0.5px;
     transition: var(--transition);
 }
 
 .brand-name:hover {
-    text-shadow: 
-        0 0 12px rgba(0, 0, 0, 0.95),
-        0 2px 25px rgba(0, 0, 0, 0.95),
-        0 4px 35px rgba(0, 0, 0, 0.9),
-        0 0 6px rgba(0, 0, 0, 0.8);
     transform: scale(1.02);
 }
 
@@ -358,10 +307,6 @@ a {
     animation: badgePulse 2s ease-in-out infinite;
     transition: var(--transition);
     cursor: default;
-    text-shadow: 
-        0 0 8px rgba(0, 0, 0, 0.8),
-        0 2px 12px rgba(0, 0, 0, 0.7),
-        0 0 4px rgba(0, 0, 0, 0.6);
     font-family: var(--font-primary);
 }
 
@@ -373,11 +318,9 @@ a {
 @keyframes badgePulse {
     0%, 100% { 
         transform: scale(1); 
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
     }
     50% { 
         transform: scale(1.05); 
-        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
     }
 }
 
@@ -388,24 +331,12 @@ a {
     color: #FFFFFF;
     margin-bottom: 1.5rem;
     line-height: 1.1;
-    text-shadow: 
-        0 0 15px rgba(0, 0, 0, 0.95),
-        0 2px 25px rgba(0, 0, 0, 0.95),
-        0 4px 35px rgba(0, 0, 0, 0.9),
-        0 6px 45px rgba(0, 0, 0, 0.8),
-        0 0 8px rgba(0, 0, 0, 0.7);
     letter-spacing: -1px;
     animation: fadeInUp 1s ease-out 0.2s both;
     transition: var(--transition);
 }
 
 .hero-headline:hover {
-    text-shadow: 
-        0 0 18px rgba(0, 0, 0, 0.98),
-        0 2px 30px rgba(0, 0, 0, 0.98),
-        0 4px 40px rgba(0, 0, 0, 0.95),
-        0 6px 50px rgba(0, 0, 0, 0.9),
-        0 0 10px rgba(0, 0, 0, 0.8);
     transform: scale(1.02);
 }
 
@@ -417,11 +348,6 @@ a {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 
-        0 0 10px rgba(0, 0, 0, 0.9),
-        0 2px 15px rgba(0, 0, 0, 0.85),
-        0 4px 25px rgba(0, 0, 0, 0.8),
-        0 0 6px rgba(0, 0, 0, 0.7);
     font-weight: 400;
     animation: fadeInUp 1s ease-out 0.4s both;
 }
@@ -450,10 +376,6 @@ a {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    text-shadow: 
-        0 0 8px rgba(0, 0, 0, 0.8),
-        0 2px 12px rgba(0, 0, 0, 0.7),
-        0 0 4px rgba(0, 0, 0, 0.6);
     font-family: var(--font-primary);
 }
 
@@ -478,7 +400,6 @@ a {
 .pill:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -499,24 +420,15 @@ a {
     border-radius: 0.5rem;
     text-align: center;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(20, 184, 166, 0.4), 0 0 0 0 rgba(20, 184, 166, 0.3);
     border: none;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    animation: fadeInUp 1s ease-out 0.8s both, buttonPulse 2s ease-in-out infinite 2s;
+    animation: fadeInUp 1s ease-out 0.8s both;
     letter-spacing: 0.3px;
     font-family: var(--font-primary);
 }
 
-@keyframes buttonPulse {
-    0%, 100% { 
-        box-shadow: 0 4px 15px rgba(20, 184, 166, 0.4), 0 0 0 0 rgba(20, 184, 166, 0.3);
-    }
-    50% { 
-        box-shadow: 0 4px 15px rgba(20, 184, 166, 0.4), 0 0 0 8px rgba(20, 184, 166, 0);
-    }
-}
 
 .btn-primary::before {
     content: '';
@@ -538,7 +450,6 @@ a {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(20, 184, 166, 0.5), 0 0 0 0 rgba(20, 184, 166, 0.3);
     background: hsl(170, 74%, 40%);
 }
 
@@ -560,10 +471,6 @@ a {
     color: #FFFFFF;
     font-weight: 500;
     animation: fadeInUp 1s ease-out 1s both, hintPulse 3s ease-in-out infinite 2s;
-    text-shadow: 
-        0 0 8px rgba(0, 0, 0, 0.85),
-        0 2px 12px rgba(0, 0, 0, 0.75),
-        0 0 4px rgba(0, 0, 0, 0.65);
     font-family: var(--font-primary);
 }
 
@@ -688,7 +595,6 @@ a {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 50%;
     animation: particleFloat 15s linear infinite;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.4);
     filter: blur(0.5px);
 }
 
@@ -967,7 +873,6 @@ a {
         opacity: 0.9;
         width: 8px !important;
         height: 8px !important;
-        box-shadow: 0 0 4px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.5);
     }
     
     .wave {
